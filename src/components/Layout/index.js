@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import GlobalStyles from '../../styles/global';
 
-import Profile from '../../components/Profile';
+import SideBar from '../../components/SideBar';
 
 import * as S from './styles';
 
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
     <S.LayoutWrapper>
       <GlobalStyles />
       <aside>
-        <Profile />
+        <SideBar />
       </aside>
       <S.LayoutMain>{children}</S.LayoutMain>
     </S.LayoutWrapper>
