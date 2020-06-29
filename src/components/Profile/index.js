@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Avatar from '../Avatar';
 
+import getThemeColor from '../../utils/getThemeColor';
+
 import * as S from './styles';
 
 const Profile = () => {
@@ -21,7 +23,7 @@ const Profile = () => {
 
   return (
     <S.ProfileWrapper className="Profile-wrapper">
-      <S.ProfileLink to="/" cover direction="left" bg="#16202c" duration={0.6}>
+      <S.ProfileLink to="/" cover direction="left" bg={getThemeColor()} duration={0.6}>
         <Avatar />
         <S.ProfileAuthor>
           {siteMetadata.title}

@@ -11,7 +11,9 @@ import {
   Bulb as Light,
 } from 'styled-icons/boxicons-regular/';
 
-import { ThList as List } from "styled-icons/typicons/"
+import { ThList as List } from 'styled-icons/typicons/';
+
+import getThemeColor from "../../utils/getThemeColor"
 
 import * as S from "./styles"
 
@@ -37,7 +39,7 @@ const MenuBar = () => {
           to="/"
           cover
           direction="right"
-          bg="#16202c"
+          bg={getThemeColor()}
           duration={0.6}
           title="Voltar para Home"
         >
@@ -49,7 +51,7 @@ const MenuBar = () => {
           to="/search/"
           cover
           direction="right"
-          bg="#16202c"
+          bg={getThemeColor()}
           duration={0.6}
           title="Pesquisar"
         >
