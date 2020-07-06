@@ -37,6 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
               category
               description
               title
+              image
               date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             }
             timeToRead
